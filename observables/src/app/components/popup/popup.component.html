@@ -1,0 +1,20 @@
+<div class="modal fade" [id]="'modal'+myCharacter.id" tabindex="-1" aria-labelledby="'modal'+myCharacter.id + 'Label'" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" [id]="'modal'+myCharacter.id + 'Label'">{{ myCharacter.name }}</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <img [src]="myCharacter.image" [alt]="myCharacter.name">
+        <hr>
+        <ul>
+          <li>Especie: {{myCharacter.species}}</li>
+          <li>Genero: {{myCharacter.gender}}</li>
+          <li>Estado: {{myCharacter.status}}</li>
+          <li>Tipo: {{(myCharacter.type !== '')? myCharacter.type : 'N/D'}}</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>

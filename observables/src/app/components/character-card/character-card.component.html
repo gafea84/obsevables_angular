@@ -1,0 +1,13 @@
+<div class="card shadow" data-bs-toggle="modal" [attr.data-bs-target]="'#modal'+ myCharacter.id">
+  <div class="row">
+    <figure>
+      <img class="miimg" [src]="myCharacter.image" [alt]="myCharacter.name">
+    </figure>
+    <div class="text-center">
+      <h4>{{myCharacter.name}}</h4>
+    </div>
+  </div>
+
+</div>
+<!-- popup -->
+<app-popup [myCharacter]="myCharacter"></app-popup>
